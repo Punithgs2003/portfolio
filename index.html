@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Punith G S | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #2d3748;
+    }
+    .nav-toggle {
+      display: none;
+      font-size: 1.8em;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #2d3748;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #2d3748;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #3182ce;
+    }
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Punith G S</h1>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h2>Customer Support Specialist | AI Enthusiast | Technical Consultant</h2>
+      <p class="bio">
+        A detail-oriented Customer Support Specialist with a strong foundation in technical support, client engagement, and CRM tools. Passionate about combining communication skills with technology to deliver seamless user experiences and explore opportunities in AI-driven support.
+      </p>
+      <div class="buttons">
+        <a href="assets/resume.pdf" target="_blank" class="btn">Download Resume</a>
+        <a href="https://github.com/punithgs2003" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/punithgs2003" target="_blank" class="btn">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a dedicated and self-motivated professional with hands-on experience in technical support across the solar energy and technology sectors. With a Bachelor’s degree in Electrical and Electronics Engineering and practical skills in platforms like Talkdesk, Excel, and CRM systems, I have developed a strong foundation in delivering customer-centric solutions.</p>
+      <p>My growing interest lies in the intersection of technology and artificial intelligence. I am particularly passionate about exploring how AI can enhance customer support systems, automate workflows, and deliver smarter user experiences. I aspire to contribute to tech-driven environments where AI is leveraged to solve real-world service challenges.</p>
+      <h3>Education</h3>
+      <p>B.E. in Electrical and Electronics Engineering – BNM Institute of Technology</p>
+      <h3>Languages</h3>
+      <p>English, Kannada, Hindi</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-block">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Talkdesk, CRM Tools</li>
+            <li>Microsoft Excel (Advanced)</li>
+            <li>Microsoft Outlook & Teams</li>
+            <li>GitHub (Version Control)</li>
+            <li>Basic HTML & CSS</li>
+            <li>Embedded C (via SST Technologies Internship)</li>
+            <li>Ticketing Systems (WhatsApp-based support)</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Effective Communication & Client Interaction</li>
+            <li>Analytical Problem Solving</li>
+            <li>Quick Learner with Tech Adaptability</li>
+            <li>Process Optimization Mindset</li>
+            <li>AI-curious & Open to Innovation</li>
+            <li>Collaborative & Cross-functional Teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Todo & Blog Frontend Web App</h3>
+        <p>Built a responsive web application combining a Todo list and a blog post creator using JavaScript and LocalStorage.<br><strong>Hosted at:</strong> <a href="https://punithgs2003.github.io/todo-blog-frontend/" target="_blank">View Project</a></p>
+        <p><strong>Tools Used:</strong> HTML, CSS, JavaScript, GitHub Pages</p>
+      </div>
+      <div class="project">
+        <h3>Embedded Systems Project (Internship – SST Technologies)</h3>
+        <p>Developed and tested real-time microcontroller logic using Embedded C during training at SST Technologies.</p>
+        <p><strong>Tools Used:</strong> Embedded C, Serial Interfaces, Microcontroller Kits</p>
+      </div>
+      <div class="project">
+        <h3>Smartphone-Operated Multipurpose Agricultural Robot</h3>
+        <p>Developed a mobile-controlled robot for precision farming. <strong>Awarded Best Project.</strong></p>
+      </div>
+      <div class="project">
+        <h3>Automatic Control of Cooling Fan</h3>
+        <p>Integrated PIR & DHT11 sensors to automate fan control based on temperature and motion.</p>
+      </div>
+      <div class="project">
+        <h3>7-Level Multilevel Inverter</h3>
+        <p>Designed and implemented an efficient, high-power inverter for energy conversion applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="job">
+        <h3>SolarEdge</h3>
+        <p class="position">Technical Service Specialist Tier-1 | Bengaluru, India | Jun 2024 – Present</p>
+        <ul>
+          <li>Provided technical support for photovoltaic inverters, batteries, and optimizers.</li>
+          <li>Cleared Talkdesk Certification and all 3 Star Exams.</li>
+          <li>Collaborated with cross-functional teams to optimize support processes.</li>
+          <li>Contributed to AI-assisted diagnostics for enhanced service efficiency.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>SST Technologies</h3>
+        <p class="position">Teaching Assistant (Internship) | Bengaluru, India | Aug 2023 – Sep 2023</p>
+        <ul>
+          <li>Conducted workshops on Embedded Systems & IoT.</li>
+          <li>Developed AI-based automation workflows for educational modules.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Eloquent Control Systems</h3>
+        <p class="position">Implant Training – Panel Board Wiring & Assembly | Bengaluru, India | Aug 2021 – Sep 2021</p>
+        <ul>
+          <li>Worked on electrical panel wiring and industrial automation tasks.</li>
+          <li>Assisted in creating AI-integrated control systems for power management.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to connect or have any opportunities to discuss, feel free to reach out to me.</p>
+      <p class="email">📧 <a href="mailto:punithgs2003@gmail.com">punithgs2003@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Punith G S | <a href="https://github.com/punithgs2003" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
